@@ -79,7 +79,7 @@ photo: '/images/DrFarida.png',  },
       ar: 'د. مصطفى أمجد',
     },
     title: {
-      en: 'Founder, Periodontist & Implant Specialist',
+      en: 'Periodontist & Implant Specialist',
       ar: 'مؤسس العيادة وأخصائي أمراض اللثة وزراعة الأسنان',
     },
     bio: {
@@ -171,12 +171,47 @@ export const services = [
     },
   },
 ]
-
 export const whyUs = [
-  { icon: '💙', title: { en: 'Gentle care', ar: 'رعاية لطيفة' }, text: { en: 'Anxious? We go at your pace.', ar: 'تشعر بالقلق؟ نسير بالسرعة التي تناسبك.' } },
-  { icon: '🧼', title: { en: 'Hospital-grade sterilisation', ar: 'تعقيم بمستوى المستشفيات' }, text: { en: 'Every instrument is sterilised and sealed.', ar: 'كل الأدوات معقمة ومغلفة.' } },
-  { icon: '💬', title: { en: 'Clear pricing', ar: 'أسعار واضحة' }, text: { en: 'You approve the plan and cost first.', ar: 'توافق على الخطة والتكلفة قبل البدء.' } },
-  { icon: '⏱️', title: { en: 'On-time visits', ar: 'مواعيد دقيقة' }, text: { en: 'Your time matters. No long waits.', ar: 'وقتك مهم، بدون انتظار طويل.' } },
+  {
+    title: {
+      en: 'Care at Your Pace',
+      ar: 'رعاية تناسبك',
+    },
+    text: {
+      en: 'We listen to your concerns, explain each step and help you feel at ease throughout your visit.',
+      ar: 'نستمع إلى مخاوفك، ونشرح لك كل خطوة، ونحرص على راحتك طوال زيارتك.',
+    },
+  },
+  {
+    title: {
+      en: 'High Standards of Hygiene',
+      ar: 'أعلى معايير النظافة والتعقيم',
+    },
+    text: {
+      en: 'We follow rigorous sterilisation and infection-control procedures to help protect every patient.',
+      ar: 'نتبع إجراءات دقيقة للتعقيم ومكافحة العدوى للمساعدة في الحفاظ على سلامة كل مريض.',
+    },
+  },
+  {
+    title: {
+      en: 'Honest, Clear Pricing',
+      ar: 'أسعار واضحة وشفافة',
+    },
+    text: {
+      en: 'We explain your treatment options and costs before you decide how to proceed.',
+      ar: 'نوضح لك خيارات العلاج والتكاليف قبل أن تقرر كيفية المتابعة.',
+    },
+  },
+  {
+    title: {
+      en: 'Personalised Treatment Plans',
+      ar: 'خطط علاج تناسب احتياجاتك',
+    },
+    text: {
+      en: 'Your needs come first. We tailor our recommendations to your oral health and goals.',
+      ar: 'احتياجاتك أولويتنا، ونحدد توصياتنا وفقًا لصحة فمك وأهدافك.',
+    },
+  },
 ]
 //connect google maps reviews 
 export const testimonials = [

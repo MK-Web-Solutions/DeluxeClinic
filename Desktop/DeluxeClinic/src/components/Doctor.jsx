@@ -20,9 +20,10 @@ export default function Doctor() {
         {doctors.map((doctor, index) => (
           <article
             key={doctor.name.en}
-            className="overflow-hidden rounded-3xl border border-slate-100 bg-white shadow-sm transition-shadow hover:shadow-lg"
+            className="overflow-hidden rounded-3xl border border-brand-100 bg-white shadow-sm transition-all duration-200 hover:border-brand-200 hover:shadow-lg"
           >
-            <div className="grid aspect-[4/3] place-items-center overflow-hidden bg-gradient-to-br from-mint-100 to-brand-100">
+            {/* Doctor photo or placeholder */}
+            <div className="grid aspect-[4/3] place-items-center overflow-hidden bg-gradient-to-br from-brand-50 via-brand-100 to-brand-200">
               {doctor.photo ? (
                 <img
                   src={doctor.photo}
@@ -37,13 +38,14 @@ export default function Doctor() {
               )}
             </div>
 
+            {/* Doctor details */}
             <div className="p-6">
+
               {index === 2 && (
-                <span className="mb-3 inline-block rounded-full bg-mint-100 px-3 py-1 text-xs font-semibold text-brand-700">
+                <span className="mb-3 inline-block rounded-full border border-brand-200 bg-brand-50 px-3 py-1 text-xs font-semibold text-brand-700">
                   {isArabic ? 'مؤسس العيادة' : 'Clinic Founder'}
                 </span>
               )}
-
               <h3 className="text-xl font-bold text-brand-900">
                 {tr(doctor.name)}
               </h3>
@@ -56,6 +58,7 @@ export default function Doctor() {
                 {tr(doctor.bio)}
               </p>
 
+              {/* Credentials */}
               <ul className="mt-5 space-y-3">
                 {doctor.credentials[lang].map((credential) => (
                   <li
@@ -64,10 +67,11 @@ export default function Doctor() {
                   >
                     <span
                       aria-hidden="true"
-                      className="mt-1 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-mint-100 text-xs text-mint-600"
+                      className="mt-1 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-brand-100 text-xs font-bold text-brand-700"
                     >
                       ✓
                     </span>
+
                     <span>{credential}</span>
                   </li>
                 ))}
@@ -79,3 +83,4 @@ export default function Doctor() {
     </section>
   )
 }
+ 

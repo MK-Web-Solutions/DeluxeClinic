@@ -3,14 +3,18 @@ import { createContext, useContext, useEffect, useMemo, useState } from 'react'
 // UI strings (content such as services/doctor lives in src/data/content.js)
 const ui = {
   en: {
-    nav: { home: 'Home', services: 'Services', about: 'About', cases: 'Smile cases', doctor: 'Our Doctor', reviews: 'Reviews', faq: 'FAQ', contact: 'Contact', book: 'Book now' },
+    nav: { home: 'Home', services: 'Services', about: 'About', cases: 'Cases', doctor: 'Our Doctors', reviews: 'Reviews', faq: 'FAQ', contact: 'Contact', book: 'Book now' },
     hero: {
-      badge: 'Now accepting new patients',
-      title: 'A healthier, brighter smile starts here',
-      text: 'Gentle, modern dental care for the whole family, with clear pricing and no long waits.',
-      cta: 'Book an appointment',
-      secondary: 'Our services',
-      points: ['Pain-free treatment', 'Same-week appointments', 'Kids welcome'],
+      badge: 'Personalised Dental Care',
+      title: 'Your Smile, Our Expertise',
+      text: 'Personalised dental care to keep you smiling with confidence. From routine check-ups to advanced treatments, our team is here to make every visit comfortable and every decision clear.',
+      cta: 'Book Your Appointment',
+      secondary: 'Explore Our Services',
+      points: [
+        'Experienced Specialists',
+        'Gentle, Personalised Care',
+        'Clear Treatment Plans',
+      ],
     },
     sections: {
       services: { eyebrow: 'What we do', title: 'Complete dental care under one roof' },
@@ -50,12 +54,16 @@ const ui = {
   ar: {
     nav: { home: 'الرئيسية', services: 'الخدمات', about: 'عن العيادة', cases: 'حالات الابتسامة', doctor: 'الطبيبة', reviews: 'التقييمات', faq: 'الأسئلة', contact: 'تواصل معنا', book: 'احجز الآن' },
     hero: {
-      badge: 'نستقبل مرضى جدد',
-      title: 'ابتسامة أكثر صحة وإشراقًا تبدأ من هنا',
-      text: 'رعاية أسنان لطيفة وحديثة لجميع أفراد العائلة، بأسعار واضحة ودون انتظار طويل.',
-      cta: 'احجز موعدًا',
-      secondary: 'خدماتنا',
-      points: ['علاج بدون ألم', 'مواعيد خلال الأسبوع', 'نرحب بالأطفال'],
+      badge: 'رعاية متكاملة لأسنانك',
+      title: 'ابتسامتك، خبرتنا واهتمامنا',
+      text: 'رعاية متكاملة لأسنانك تمنحك الثقة في كل ابتسامة. من الفحوصات الدورية إلى العلاجات المتقدمة، نحرص على راحتك ونوضح لك كل خطوة لتختار العلاج المناسب لك.',
+      cta: 'احجز موعدك',
+      secondary: 'اكتشف خدماتنا',
+      points: [
+        'أطباء متخصصون',
+        'رعاية لطيفة ومخصصة',
+        'خطط علاج واضحة',
+      ],
     },
     sections: {
       services: { eyebrow: 'ماذا نقدم', title: 'رعاية أسنان متكاملة في مكان واحد' },
