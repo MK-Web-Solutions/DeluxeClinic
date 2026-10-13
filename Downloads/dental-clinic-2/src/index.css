@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-50: #effbfc;
+  --color-brand-100: #d7f4f3;
+  --color-brand-200: #b4e8e5;
+  --color-brand-500: #20aaa7;
+  --color-brand-600: #128f91;
+  --color-brand-700: #0b7477;
+  --color-brand-900: #123c43;
+  --color-mint-100: #dff7f1;
+  --color-mint-500: #26a995;
+  --font-sans: "Inter", "Tajawal", system-ui, sans-serif;
+  --font-display: "Fraunces", "Tajawal", Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-slate-700 antialiased;
+}
+
+/* Arabic uses Tajawal for everything, including headings */
+html[lang="ar"] body,
+html[lang="ar"] .font-display {
+  font-family: "Tajawal", system-ui, sans-serif;
+}
+
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Refined clinic styling: white surfaces, turquoise accents, softer geometry. */
+:root { color-scheme: light; }
+body { background: #fff; }
+html { scroll-padding-top: 5rem; }
+::selection { background: #c8f1ee; color: #123c43; }
+a, button, input, select, textarea { -webkit-tap-highlight-color: transparent; }
+button, a { transition-duration: 180ms; }
+.about-art {
+  background:
+    radial-gradient(circle at 25% 22%, rgba(255,255,255,.96) 0 8%, transparent 8.5%),
+    radial-gradient(circle at 78% 72%, rgba(255,255,255,.65) 0 13%, transparent 13.5%),
+    linear-gradient(135deg, #d9f5f2, #a9e2df 58%, #eaf9f8);
+}
+.about-art-card { border: 1px solid rgba(18,143,145,.12); }
+.case-art { position: relative; overflow: hidden; isolation: isolate; }
+.case-art::before, .case-art::after {
+  content: ""; position: absolute; border-radius: 50%; z-index: -1;
+}
+.case-art::before { width: 18rem; height: 18rem; background: rgba(255,255,255,.55); top: -5rem; right: -3rem; }
+.case-art::after { width: 14rem; height: 14rem; background: rgba(18,143,145,.12); bottom: -7rem; left: -2rem; }
+.case-a { background: linear-gradient(135deg, #e7f9f7, #bcebe7); }
+.case-b { background: linear-gradient(135deg, #eef7fb, #c9e9ef); }
+.case-c { background: linear-gradient(135deg, #eaf8f2, #c4e9da); }
+.case-smile {
+  display: flex; gap: 2px; padding: 15px 18px 18px; background: #d98c91;
+  border: 5px solid rgba(255,255,255,.8); border-radius: 18px 18px 48px 48px;
+  box-shadow: 0 18px 38px rgba(18,60,67,.13); transform: rotate(-4deg);
+}
+.case-smile span {
+  display: block; width: clamp(14px, 2vw, 23px); height: 42px;
+  background: linear-gradient(100deg, #fff, #f2f8f6 70%, #d8e8e5);
+  border: 1px solid #d8e5e3; border-radius: 4px 4px 9px 9px;
+}
+.case-number {
+  position: absolute; top: 1rem; inset-inline-start: 1rem; color: #176f70;
+  background: rgba(255,255,255,.75); border: 1px solid rgba(255,255,255,.9);
+  padding: .35rem .65rem; border-radius: 999px; font-size: .75rem; font-weight: 700;
+}
+@media (max-width: 640px) {
+  .case-smile { gap: 1px; padding: 12px 12px 15px; }
+  .case-smile span { height: 32px; }
+}
