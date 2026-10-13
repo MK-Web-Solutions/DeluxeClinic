@@ -9,13 +9,13 @@ export const clinic = {
   phoneDisplay: '+20 11 12811288',
   email: 'deluxedentalclinic@gmail.com',
   address: {
-    en: '16/5 ElNasr St. -Maadi Cairo, Egypt 117288',
+    en: ' Zahraa El Maadi, Block 5/88 (Above Khair Zaman, 2nd Floor — look for the black "Luxe" sticker on the intercom) ',
     ar: '١٦/٥ شارع النصر - المعادي، القاهرة، مصر ١١٧٢٨٨',
   },
   // Used for the "Open in Google Maps" link
   mapQuery: 'Deluxe Dental Clinic-Dr Mostafa Amgad',
   hours: [
-    { days: { en: 'Saturday – Thursday', ar: 'السبت – الخميس' }, time: { en: '10:00 AM – 9:00 PM', ar: '١٠:٠٠ ص – ٩:٠٠ م' } },
+    { days: { en: 'Saturday – Thursday', ar: 'السبت – الخميس' }, time: { en: '3:30 PM – 10:00 PM', ar: '٣:٣٠ م – ١٠:٠٠ م' } },
     { days: { en: 'Friday', ar: 'الجمعة' }, time: { en: 'Closed', ar: 'مغلق' } },
   ],
   social: { instagram: '#', facebook: '#' },
@@ -45,8 +45,7 @@ export const doctors = [
         'ماجستير طب أسنان الأطفال، جامعة القاهرة',
       ],
     },
-    photo: 'src/data/DrFarida.png',
-  },
+photo: '/images/DrFarida.png',  },
 
   {
     name: {
@@ -71,7 +70,7 @@ export const doctors = [
         'ماجستير تقويم الأسنان، جامعة القاهرة',
       ],
     },
-    photo: 'src/data/DrMohamed.png',
+    photo: '/images/DrMohamed.png',
   },
 
   {

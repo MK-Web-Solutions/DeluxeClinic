@@ -21,8 +21,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-40 border-b border-slate-100 bg-white/90 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
         <a href="#home" className="flex items-center gap-2 font-display text-lg font-bold text-brand-900">
-          <img src="src/data/ClinicLogo.png" alt="Clinic Logo" className="h-9 w-9 rounded-xl bg-brand-550 text-xl" />
-          {tr(clinic.shortName)}
+          <img src="/images/ClinicLogo.png" alt="Clinic Logo" className="h-12 w-12 rounded-xl bg-brand-550 text-xl" />
         </a>
 
         <nav className="hidden items-center gap-6 text-sm font-medium lg:flex" aria-label="Main">
